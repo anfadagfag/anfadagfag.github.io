@@ -22,6 +22,118 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux基础</title>
+    <url>/2023/04/16/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/Linux%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h2 id="Linux基础"><a href="#Linux基础" class="headerlink" title="Linux基础"></a>Linux基础</h2><h3 id="学习Linux的价值"><a href="#学习Linux的价值" class="headerlink" title="学习Linux的价值"></a>学习Linux的价值</h3><ul>
+<li>Linux是现代化应用程序交付的首选平台，无论是部署在裸机、虚拟化还是容器环境</li>
+<li>公司内部服务(TCE、FaaS、SCM)统一使用Debian Linux系统</li>
+<li>熟悉Linux基础命令，熟练运维前端常用服务(Nginx,Node.js)</li>
+<li>加深对操作系统概念和实现的裸机，夯实基础知识</li>
+</ul>
+<h3 id="计算机硬件"><a href="#计算机硬件" class="headerlink" title="计算机硬件"></a>计算机硬件</h3><h4 id="计算机由五大单元组成"><a href="#计算机由五大单元组成" class="headerlink" title="计算机由五大单元组成"></a>计算机由五大单元组成</h4><ul>
+<li>控制器</li>
+<li>运算器</li>
+<li>存储器单元</li>
+<li>输入单元</li>
+<li>输出单元</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416145548.png" alt="image-20230415222811528"></p>
+<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><p>管理和控制计算机系统中的硬件和软件资源，用于在用户与系统硬件之间传递信息</p>
+<blockquote>
+<p>操作系统做的事情</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150207.png" alt="image-20230415223222027"></p>
+<blockquote>
+<p>操作系统的启动流程</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150239.png" alt="image-20230415223608404"></p>
+<h3 id="Linux系统概述"><a href="#Linux系统概述" class="headerlink" title="Linux系统概述"></a>Linux系统概述</h3><h4 id="查看Linux版本信息"><a href="#查看Linux版本信息" class="headerlink" title="查看Linux版本信息"></a>查看Linux版本信息</h4><p>内核版本信息</p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150312.png" alt="image-20230415223943949"></p>
+<p>发行版本信息</p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150341.png" alt="image-20230415224031953"></p>
+<h4 id="Linux系统应用领域"><a href="#Linux系统应用领域" class="headerlink" title="Linux系统应用领域"></a>Linux系统应用领域</h4><ul>
+<li>IT服务器(操作系统、虚拟化和云计算)</li>
+<li>嵌入式智能设备</li>
+<li>个人办公桌面</li>
+<li>学术研究与软件研发</li>
+</ul>
+<h4 id="Linux组成部分"><a href="#Linux组成部分" class="headerlink" title="Linux组成部分"></a>Linux组成部分</h4><ul>
+<li><p>内核</p>
+</li>
+<li><p>shell</p>
+</li>
+<li><p>文件系统</p>
+<p>操作系统中负责管理持久化数据的子系统，负责把用户的文件存在磁盘硬件中，持久化的保存文件。</p>
+</li>
+<li><p>应用程序</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150410.png" alt="image-20230415224500780"></p>
+<h4 id="Linux体系结构"><a href="#Linux体系结构" class="headerlink" title="Linux体系结构"></a>Linux体系结构</h4><p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150437.png" alt="image-20230415224632948"></p>
+<ul>
+<li>内核是硬件与软件之间的中间层</li>
+<li>内核是一个资源管理程序</li>
+<li>内核提供一组面向系统的命令</li>
+</ul>
+<h4 id="文件系统命令"><a href="#文件系统命令" class="headerlink" title="文件系统命令"></a>文件系统命令</h4><blockquote>
+<p>查看文件系统类型</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150503.png" alt="image-20230415230959261"></p>
+<blockquote>
+<p>文件基本操作</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150526.png" alt="image-20230415231037026"></p>
+<h4 id="文件读取流程"><a href="#文件读取流程" class="headerlink" title="文件读取流程"></a>文件读取流程</h4><p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150600.png" alt="image-20230415231130487"></p>
+<h4 id="用户权限"><a href="#用户权限" class="headerlink" title="用户权限"></a>用户权限</h4><ul>
+<li><p>用户账户</p>
+<p>普通用户账户: 在系统中进行普通作业</p>
+<p>超级用户账户: 在系统中对普通用户和整个系统进行管理</p>
+</li>
+<li><p>组账户</p>
+<p>标准组: 可以容纳多个用户</p>
+<p>私有组: 只有用户自己</p>
+</li>
+</ul>
+<blockquote>
+<p>查看用户信息</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150623.png" alt="image-20230415231735712"></p>
+<blockquote>
+<p>文件权限关于用户的三个概念:</p>
+</blockquote>
+<p>所有者：文件的所有者</p>
+<p>所在组：文件的所有者所在的组</p>
+<p>其他人：除文件所有者及所在组外的其他人</p>
+<p>每个用户对于文件都有不同的权限，包括度&#x3D;读(R)、写(W)、执行(X)</p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150702.png" alt="image-20230415232152821"></p>
+<blockquote>
+<p>用户权限操作</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150737.png" alt="image-20230415232229526"></p>
+<h3 id="Linux软件包管理"><a href="#Linux软件包管理" class="headerlink" title="Linux软件包管理"></a>Linux软件包管理</h3><h4 id="软件包"><a href="#软件包" class="headerlink" title="软件包"></a>软件包</h4><p>通常指的是一个应用程序，它可以是一个GUI应用程序、命令行工具或(其他全检程序需要的)软件库</p>
+<h4 id="软件包管理"><a href="#软件包管理" class="headerlink" title="软件包管理"></a>软件包管理</h4><p>底层工具:主要是用来处理安装和删除软件包文件等任务，DPKG,RPM</p>
+<p>上层工具:主要是用于数据搜索任务和依赖解析任务，APT,YUM,DNF</p>
+<h4 id="软件包管理工具"><a href="#软件包管理工具" class="headerlink" title="软件包管理工具"></a>软件包管理工具</h4><p>RPM(Red Hat Package Manager)，为Red hat 操作系统的包管理系统</p>
+<p>DPKG(Debian package)，为Debian操作系统的包管理系统</p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150800.png" alt="image-20230416143909320"></p>
+<h4 id="Debian-APT常用命令"><a href="#Debian-APT常用命令" class="headerlink" title="Debian APT常用命令"></a>Debian APT常用命令</h4><ul>
+<li>列出所有有更新的软件清单命令：apt update</li>
+<li>安装指定的软件命令：apt install <package_name></li>
+<li>安装多个软件包：apt install <package_1> <package_2></li>
+<li>更新指定的软件命令：apt update <package_name></li>
+<li>删除软件包命令：apt remove <package_name></li>
+<li>查找软件包命令：apt search <keyword></li>
+<li>列出所有已安装的包：apt list –installed</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vuex基本使用</title>
     <url>/2023/04/15/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/Vuex%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<h2 id="Vuex"><a href="#Vuex" class="headerlink" title="Vuex"></a>Vuex</h2><p><strong>工作原理图</strong></p>
