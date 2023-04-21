@@ -22,6 +22,196 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux基础</title>
+    <url>/2023/04/16/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/Linux%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h2 id="Linux基础"><a href="#Linux基础" class="headerlink" title="Linux基础"></a>Linux基础</h2><h3 id="学习Linux的价值"><a href="#学习Linux的价值" class="headerlink" title="学习Linux的价值"></a>学习Linux的价值</h3><ul>
+<li>Linux是现代化应用程序交付的首选平台，无论是部署在裸机、虚拟化还是容器环境</li>
+<li>公司内部服务(TCE、FaaS、SCM)统一使用Debian Linux系统</li>
+<li>熟悉Linux基础命令，熟练运维前端常用服务(Nginx,Node.js)</li>
+<li>加深对操作系统概念和实现的裸机，夯实基础知识</li>
+</ul>
+<h3 id="计算机硬件"><a href="#计算机硬件" class="headerlink" title="计算机硬件"></a>计算机硬件</h3><h4 id="计算机由五大单元组成"><a href="#计算机由五大单元组成" class="headerlink" title="计算机由五大单元组成"></a>计算机由五大单元组成</h4><ul>
+<li>控制器</li>
+<li>运算器</li>
+<li>存储器单元</li>
+<li>输入单元</li>
+<li>输出单元</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416145548.png" alt="image-20230415222811528"></p>
+<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><p>管理和控制计算机系统中的硬件和软件资源，用于在用户与系统硬件之间传递信息</p>
+<blockquote>
+<p>操作系统做的事情</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150207.png" alt="image-20230415223222027"></p>
+<blockquote>
+<p>操作系统的启动流程</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150239.png" alt="image-20230415223608404"></p>
+<h3 id="Linux系统概述"><a href="#Linux系统概述" class="headerlink" title="Linux系统概述"></a>Linux系统概述</h3><h4 id="查看Linux版本信息"><a href="#查看Linux版本信息" class="headerlink" title="查看Linux版本信息"></a>查看Linux版本信息</h4><p>内核版本信息</p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150312.png" alt="image-20230415223943949"></p>
+<p>发行版本信息</p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150341.png" alt="image-20230415224031953"></p>
+<h4 id="Linux系统应用领域"><a href="#Linux系统应用领域" class="headerlink" title="Linux系统应用领域"></a>Linux系统应用领域</h4><ul>
+<li>IT服务器(操作系统、虚拟化和云计算)</li>
+<li>嵌入式智能设备</li>
+<li>个人办公桌面</li>
+<li>学术研究与软件研发</li>
+</ul>
+<h4 id="Linux组成部分"><a href="#Linux组成部分" class="headerlink" title="Linux组成部分"></a>Linux组成部分</h4><ul>
+<li><p>内核</p>
+</li>
+<li><p>shell</p>
+</li>
+<li><p>文件系统</p>
+<p>操作系统中负责管理持久化数据的子系统，负责把用户的文件存在磁盘硬件中，持久化的保存文件。</p>
+</li>
+<li><p>应用程序</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150410.png" alt="image-20230415224500780"></p>
+<h4 id="Linux体系结构"><a href="#Linux体系结构" class="headerlink" title="Linux体系结构"></a>Linux体系结构</h4><p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150437.png" alt="image-20230415224632948"></p>
+<ul>
+<li>内核是硬件与软件之间的中间层</li>
+<li>内核是一个资源管理程序</li>
+<li>内核提供一组面向系统的命令</li>
+</ul>
+<h4 id="文件系统命令"><a href="#文件系统命令" class="headerlink" title="文件系统命令"></a>文件系统命令</h4><blockquote>
+<p>查看文件系统类型</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150503.png" alt="image-20230415230959261"></p>
+<blockquote>
+<p>文件基本操作</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150526.png" alt="image-20230415231037026"></p>
+<h4 id="文件读取流程"><a href="#文件读取流程" class="headerlink" title="文件读取流程"></a>文件读取流程</h4><p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150600.png" alt="image-20230415231130487"></p>
+<h4 id="用户权限"><a href="#用户权限" class="headerlink" title="用户权限"></a>用户权限</h4><ul>
+<li><p>用户账户</p>
+<p>普通用户账户: 在系统中进行普通作业</p>
+<p>超级用户账户: 在系统中对普通用户和整个系统进行管理</p>
+</li>
+<li><p>组账户</p>
+<p>标准组: 可以容纳多个用户</p>
+<p>私有组: 只有用户自己</p>
+</li>
+</ul>
+<blockquote>
+<p>查看用户信息</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150623.png" alt="image-20230415231735712"></p>
+<blockquote>
+<p>文件权限关于用户的三个概念:</p>
+</blockquote>
+<p>所有者：文件的所有者</p>
+<p>所在组：文件的所有者所在的组</p>
+<p>其他人：除文件所有者及所在组外的其他人</p>
+<p>每个用户对于文件都有不同的权限，包括度&#x3D;读(R)、写(W)、执行(X)</p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150702.png" alt="image-20230415232152821"></p>
+<blockquote>
+<p>用户权限操作</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150737.png" alt="image-20230415232229526"></p>
+<h3 id="Linux软件包管理"><a href="#Linux软件包管理" class="headerlink" title="Linux软件包管理"></a>Linux软件包管理</h3><h4 id="软件包"><a href="#软件包" class="headerlink" title="软件包"></a>软件包</h4><p>通常指的是一个应用程序，它可以是一个GUI应用程序、命令行工具或(其他全检程序需要的)软件库</p>
+<h4 id="软件包管理"><a href="#软件包管理" class="headerlink" title="软件包管理"></a>软件包管理</h4><p>底层工具:主要是用来处理安装和删除软件包文件等任务，DPKG,RPM</p>
+<p>上层工具:主要是用于数据搜索任务和依赖解析任务，APT,YUM,DNF</p>
+<h4 id="软件包管理工具"><a href="#软件包管理工具" class="headerlink" title="软件包管理工具"></a>软件包管理工具</h4><p>RPM(Red Hat Package Manager)，为Red hat 操作系统的包管理系统</p>
+<p>DPKG(Debian package)，为Debian操作系统的包管理系统</p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150800.png" alt="image-20230416143909320"></p>
+<h4 id="Debian-APT常用命令"><a href="#Debian-APT常用命令" class="headerlink" title="Debian APT常用命令"></a>Debian APT常用命令</h4><ul>
+<li>列出所有有更新的软件清单命令：apt update</li>
+<li>安装指定的软件命令：apt install <package_name></li>
+<li>安装多个软件包：apt install <package_1> <package_2></li>
+<li>更新指定的软件命令：apt update <package_name></li>
+<li>删除软件包命令：apt remove <package_name></li>
+<li>查找软件包命令：apt search <keyword></li>
+<li>列出所有已安装的包：apt list –installed</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vuex基本使用</title>
+    <url>/2023/04/15/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/Vuex%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<h2 id="Vuex"><a href="#Vuex" class="headerlink" title="Vuex"></a>Vuex</h2><p><strong>工作原理图</strong></p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233145.png" alt="image-20230410164330185"></p>
+<h3 id="搭建vuex环境"><a href="#搭建vuex环境" class="headerlink" title="搭建vuex环境"></a>搭建vuex环境</h3><p><strong>安装vuex</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">npm i vuex</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233319.png" alt="image-20230410164330185"></p>
+<p><strong>创建store</strong>  <code>index.js</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//创建Vuex中最为核心的sotre</span></span><br><span class="line"><span class="comment">//引入vuex</span></span><br><span class="line"><span class="keyword">import</span> &#123; createStore &#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//用于响应组件中的动作</span></span><br><span class="line"><span class="keyword">const</span> actions = &#123;</span><br><span class="line">    <span class="title function_">jia</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;actions中的+被调用了&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用于操作数据 --state--</span></span><br><span class="line"><span class="keyword">const</span> mutations = &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用于存储数据</span></span><br><span class="line"><span class="keyword">const</span> state = &#123;</span><br><span class="line">    <span class="attr">sum</span>: <span class="number">0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建store</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">createStore</span>(&#123;</span><br><span class="line">    actions,</span><br><span class="line">    mutations,</span><br><span class="line">    state</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p><strong>引入store</strong>    <code>main.js</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//引入的不再是vue的构造函数 ，因为的是一个名为 createApp 的工厂函数</span></span><br><span class="line"><span class="keyword">import</span> &#123; createApp &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./App.vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span>  store  <span class="keyword">from</span> <span class="string">&#x27;./store&#x27;</span></span><br><span class="line"><span class="title function_">createApp</span>(<span class="title class_">App</span>).<span class="title function_">use</span>(store).<span class="title function_">mount</span>(<span class="string">&#x27;#app&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>使用<strong>vuex</strong></p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233354.png" alt="image-20230410170440136"></p>
+<p><strong>参数问题</strong></p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233425.png" alt="image-20230410171547312"></p>
+<p>context 类似与小型的store</p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233451.png" alt="image-20230410171708444"></p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233517.png" alt="image-20230410171852236"></p>
+<h4 id="vuex小案例"><a href="#vuex小案例" class="headerlink" title="vuex小案例"></a>vuex小案例</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;h1&gt;当前求和为：&#123;&#123; $store.state.sum</span><br><span class="line">         &#125;&#125;&lt;/h1&gt;</span><br><span class="line">        &lt;select v-model.number=&quot;n&quot;&gt;</span><br><span class="line">            &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;</span><br><span class="line">            &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;</span><br><span class="line">            &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;</span><br><span class="line">        &lt;/select&gt;</span><br><span class="line">        &lt;button @click=&quot;increment&quot;&gt;+&lt;/button&gt;</span><br><span class="line">        &lt;button @click=&quot;decrement&quot;&gt;-&lt;/button&gt;</span><br><span class="line">        &lt;button @click=&quot;incrementOdd&quot;&gt;当前奇数再+&lt;/button&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">    name: &#x27;Count&#x27;,</span><br><span class="line">    data() &#123;</span><br><span class="line">        return &#123;</span><br><span class="line">            n: 1</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        increment() &#123;</span><br><span class="line">           this.$store.dispatch(&#x27;jia&#x27;,this.n)</span><br><span class="line">        &#125;,</span><br><span class="line">        decrement()&#123;</span><br><span class="line">            this.$store.dispatch(&#x27;jian&#x27;,this.n)</span><br><span class="line">        &#125;,</span><br><span class="line">        incrementOdd()&#123;</span><br><span class="line">            this.$store.dispatch(&#x27;jiaOdd&#x27;,this.n)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">button &#123;</span><br><span class="line">    margin-left: 10px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//创建Vuex中最为核心的sotre</span></span><br><span class="line"><span class="comment">//引入vuex</span></span><br><span class="line"><span class="keyword">import</span> &#123; createStore &#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//用于响应组件中的动作</span></span><br><span class="line"><span class="keyword">const</span> actions = &#123;</span><br><span class="line">    <span class="title function_">jia</span>(<span class="params">context,value</span>) &#123;</span><br><span class="line">        <span class="comment">// console.log(context,value)</span></span><br><span class="line">        context.<span class="title function_">commit</span>(<span class="string">&#x27;JIA&#x27;</span>,value)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">jian</span>(<span class="params">context,value</span>)&#123;</span><br><span class="line">        context.<span class="title function_">commit</span>(<span class="string">&#x27;JIAN&#x27;</span>,value)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">jiaOdd</span>(<span class="params">context,value</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(context.<span class="property">state</span>.<span class="property">sum</span> % <span class="number">2</span>)&#123;</span><br><span class="line">            context.<span class="title function_">commit</span>(<span class="string">&#x27;JIAODD&#x27;</span>,value)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用于操作数据 --state--</span></span><br><span class="line"><span class="keyword">const</span> mutations = &#123;</span><br><span class="line">    <span class="title function_">JIA</span>(<span class="params">state,value</span>)&#123;</span><br><span class="line">        <span class="comment">// console.log(state)</span></span><br><span class="line">        state.<span class="property">sum</span> += value</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">JIAN</span>(<span class="params">state,value</span>)&#123;</span><br><span class="line">        state.<span class="property">sum</span> -= value</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">JIAODD</span>(<span class="params">state,value</span>)&#123;</span><br><span class="line">        state.<span class="property">sum</span> += value</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用于存储数据</span></span><br><span class="line"><span class="keyword">const</span> state = &#123;</span><br><span class="line">    <span class="attr">sum</span>: <span class="number">0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建store</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">createStore</span>(&#123;</span><br><span class="line">    actions,</span><br><span class="line">    mutations,</span><br><span class="line">    state</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="getters配置项"><a href="#getters配置项" class="headerlink" title="getters配置项"></a>getters配置项</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//用于将state中的数据进行加工</span></span><br><span class="line"><span class="keyword">const</span> getters = &#123;</span><br><span class="line">    <span class="title function_">bigNum</span>(<span class="params">state</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> state.<span class="property">sum</span> * <span class="number">10</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233547.png" alt="image-20230410184319490"></p>
+<h4 id="mapState和mapGetters"><a href="#mapState和mapGetters" class="headerlink" title="mapState和mapGetters"></a>mapState和mapGetters</h4><p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233642.png" alt="image-20230410190026551"></p>
+<blockquote>
+<p>书写计算属性</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">computed: &#123;</span><br><span class="line">        //程序员亲自书写计算属性</span><br><span class="line">        he()&#123;</span><br><span class="line">            return this.$store.state.sum</span><br><span class="line">        &#125;,</span><br><span class="line">        xuexaio()&#123;</span><br><span class="line">            return this.$store.state.school</span><br><span class="line">        &#125;,</span><br><span class="line">        banji()&#123;</span><br><span class="line">            return  this.$store.state.classId</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>mapState生成计算属性</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233712.png" alt="image-20230410190847682"></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//借助mapState生成计算属性 --数组写法 计算属性和state数据属性名相同</span><br><span class="line">    computed: &#123;</span><br><span class="line">        ...mapState([&#x27;sum&#x27;,&#x27;school&#x27;,&#x27;classId&#x27;])</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>mapGetters同上</p>
+<h4 id="mapActions和mapMutations"><a href="#mapActions和mapMutations" class="headerlink" title="mapActions和mapMutations"></a>mapActions和mapMutations</h4><blockquote>
+<p>mapMutations</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">methods: &#123;</span><br><span class="line">		//调用mapMutations生成对应的方法，方法中会调用commit去联系mutations</span><br><span class="line">        ...mapMutations(&#123;increment:&#x27;JIA&#x27;,decrement:&#x27;JIAN&#x27;&#125;)</span><br><span class="line">        ,</span><br><span class="line">        incrementOdd() &#123;</span><br><span class="line">            this.$store.dispatch(&#x27;jiaOdd&#x27;, this.n)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>有参数必须传值</strong></p>
+<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233732.png" alt="image-20230410192222043"></p>
+<p>对象写法同mapState</p>
+<h4 id="Vuex模块化"><a href="#Vuex模块化" class="headerlink" title="Vuex模块化"></a>Vuex模块化</h4><ol>
+<li><p>目的：让代码更好维护，让多种数据分类更加明确。</p>
+</li>
+<li><p>修改<code>store.js</code></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> countAbout = &#123;</span><br><span class="line">  <span class="attr">namespaced</span>:<span class="literal">true</span>,<span class="comment">//开启命名空间</span></span><br><span class="line">  <span class="attr">state</span>:&#123;<span class="attr">x</span>:<span class="number">1</span>&#125;,</span><br><span class="line">  <span class="attr">mutations</span>: &#123; ... &#125;,</span><br><span class="line">  <span class="attr">actions</span>: &#123; ... &#125;,</span><br><span class="line">  <span class="attr">getters</span>: &#123;</span><br><span class="line">    <span class="title function_">bigSum</span>(<span class="params">state</span>)&#123;</span><br><span class="line">       <span class="keyword">return</span> state.<span class="property">sum</span> * <span class="number">10</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> personAbout = &#123;</span><br><span class="line">  <span class="attr">namespaced</span>:<span class="literal">true</span>,<span class="comment">//开启命名空间</span></span><br><span class="line">  <span class="attr">state</span>:&#123; ... &#125;,</span><br><span class="line">  <span class="attr">mutations</span>: &#123; ... &#125;,</span><br><span class="line">  <span class="attr">actions</span>: &#123; ... &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> <span class="title class_">Vuex</span>.<span class="title class_">Store</span>(&#123;</span><br><span class="line">  <span class="attr">modules</span>: &#123;</span><br><span class="line">    countAbout,</span><br><span class="line">    personAbout</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开启命名空间后，组件中读取state数据：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：自己直接读取</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="property">state</span>.<span class="property">personAbout</span>.<span class="property">list</span></span><br><span class="line"><span class="comment">//方式二：借助mapState读取：</span></span><br><span class="line">...<span class="title function_">mapState</span>(<span class="string">&#x27;countAbout&#x27;</span>,[<span class="string">&#x27;sum&#x27;</span>,<span class="string">&#x27;school&#x27;</span>,<span class="string">&#x27;subject&#x27;</span>]),</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开启命名空间后，组件中读取getters数据：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：自己直接读取</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="property">getters</span>[<span class="string">&#x27;personAbout/firstPersonName&#x27;</span>]</span><br><span class="line"><span class="comment">//方式二：借助mapGetters读取：</span></span><br><span class="line">...<span class="title function_">mapGetters</span>(<span class="string">&#x27;countAbout&#x27;</span>,[<span class="string">&#x27;bigSum&#x27;</span>])</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开启命名空间后，组件中调用dispatch</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：自己直接dispatch</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="title function_">dispatch</span>(<span class="string">&#x27;personAbout/addPersonWang&#x27;</span>,person)</span><br><span class="line"><span class="comment">//方式二：借助mapActions：</span></span><br><span class="line">...<span class="title function_">mapActions</span>(<span class="string">&#x27;countAbout&#x27;</span>,&#123;<span class="attr">incrementOdd</span>:<span class="string">&#x27;jiaOdd&#x27;</span>,<span class="attr">incrementWait</span>:<span class="string">&#x27;jiaWait&#x27;</span>&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开启命名空间后，组件中调用commit</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：自己直接commit</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="title function_">commit</span>(<span class="string">&#x27;personAbout/ADD_PERSON&#x27;</span>,person)</span><br><span class="line"><span class="comment">//方式二：借助mapMutations：</span></span><br><span class="line">...<span class="title function_">mapMutations</span>(<span class="string">&#x27;countAbout&#x27;</span>,&#123;<span class="attr">increment</span>:<span class="string">&#x27;JIA&#x27;</span>,<span class="attr">decrement</span>:<span class="string">&#x27;JIAN&#x27;</span>&#125;),</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+        <tag>Vue</tag>
+        <tag>Vuex</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTTP</title>
     <url>/2023/04/15/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/http/</url>
     <content><![CDATA[<h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><p>HTTP是一个在计算机世界里专门在两点之间传输文字、图片、音频、视频等超文本数据的约定和规范</p>
@@ -159,196 +349,6 @@
       </categories>
       <tags>
         <tag>javascript</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vuex基本使用</title>
-    <url>/2023/04/15/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/Vuex%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h2 id="Vuex"><a href="#Vuex" class="headerlink" title="Vuex"></a>Vuex</h2><p><strong>工作原理图</strong></p>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233145.png" alt="image-20230410164330185"></p>
-<h3 id="搭建vuex环境"><a href="#搭建vuex环境" class="headerlink" title="搭建vuex环境"></a>搭建vuex环境</h3><p><strong>安装vuex</strong></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">npm i vuex</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233319.png" alt="image-20230410164330185"></p>
-<p><strong>创建store</strong>  <code>index.js</code></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//创建Vuex中最为核心的sotre</span></span><br><span class="line"><span class="comment">//引入vuex</span></span><br><span class="line"><span class="keyword">import</span> &#123; createStore &#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//用于响应组件中的动作</span></span><br><span class="line"><span class="keyword">const</span> actions = &#123;</span><br><span class="line">    <span class="title function_">jia</span>(<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;actions中的+被调用了&#x27;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用于操作数据 --state--</span></span><br><span class="line"><span class="keyword">const</span> mutations = &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用于存储数据</span></span><br><span class="line"><span class="keyword">const</span> state = &#123;</span><br><span class="line">    <span class="attr">sum</span>: <span class="number">0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建store</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">createStore</span>(&#123;</span><br><span class="line">    actions,</span><br><span class="line">    mutations,</span><br><span class="line">    state</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p><strong>引入store</strong>    <code>main.js</code></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//引入的不再是vue的构造函数 ，因为的是一个名为 createApp 的工厂函数</span></span><br><span class="line"><span class="keyword">import</span> &#123; createApp &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./App.vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span>  store  <span class="keyword">from</span> <span class="string">&#x27;./store&#x27;</span></span><br><span class="line"><span class="title function_">createApp</span>(<span class="title class_">App</span>).<span class="title function_">use</span>(store).<span class="title function_">mount</span>(<span class="string">&#x27;#app&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>使用<strong>vuex</strong></p>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233354.png" alt="image-20230410170440136"></p>
-<p><strong>参数问题</strong></p>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233425.png" alt="image-20230410171547312"></p>
-<p>context 类似与小型的store</p>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233451.png" alt="image-20230410171708444"></p>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233517.png" alt="image-20230410171852236"></p>
-<h4 id="vuex小案例"><a href="#vuex小案例" class="headerlink" title="vuex小案例"></a>vuex小案例</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">        &lt;h1&gt;当前求和为：&#123;&#123; $store.state.sum</span><br><span class="line">         &#125;&#125;&lt;/h1&gt;</span><br><span class="line">        &lt;select v-model.number=&quot;n&quot;&gt;</span><br><span class="line">            &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;</span><br><span class="line">            &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;</span><br><span class="line">            &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;</span><br><span class="line">        &lt;/select&gt;</span><br><span class="line">        &lt;button @click=&quot;increment&quot;&gt;+&lt;/button&gt;</span><br><span class="line">        &lt;button @click=&quot;decrement&quot;&gt;-&lt;/button&gt;</span><br><span class="line">        &lt;button @click=&quot;incrementOdd&quot;&gt;当前奇数再+&lt;/button&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">    name: &#x27;Count&#x27;,</span><br><span class="line">    data() &#123;</span><br><span class="line">        return &#123;</span><br><span class="line">            n: 1</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        increment() &#123;</span><br><span class="line">           this.$store.dispatch(&#x27;jia&#x27;,this.n)</span><br><span class="line">        &#125;,</span><br><span class="line">        decrement()&#123;</span><br><span class="line">            this.$store.dispatch(&#x27;jian&#x27;,this.n)</span><br><span class="line">        &#125;,</span><br><span class="line">        incrementOdd()&#123;</span><br><span class="line">            this.$store.dispatch(&#x27;jiaOdd&#x27;,this.n)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">button &#123;</span><br><span class="line">    margin-left: 10px;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//创建Vuex中最为核心的sotre</span></span><br><span class="line"><span class="comment">//引入vuex</span></span><br><span class="line"><span class="keyword">import</span> &#123; createStore &#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//用于响应组件中的动作</span></span><br><span class="line"><span class="keyword">const</span> actions = &#123;</span><br><span class="line">    <span class="title function_">jia</span>(<span class="params">context,value</span>) &#123;</span><br><span class="line">        <span class="comment">// console.log(context,value)</span></span><br><span class="line">        context.<span class="title function_">commit</span>(<span class="string">&#x27;JIA&#x27;</span>,value)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">jian</span>(<span class="params">context,value</span>)&#123;</span><br><span class="line">        context.<span class="title function_">commit</span>(<span class="string">&#x27;JIAN&#x27;</span>,value)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">jiaOdd</span>(<span class="params">context,value</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(context.<span class="property">state</span>.<span class="property">sum</span> % <span class="number">2</span>)&#123;</span><br><span class="line">            context.<span class="title function_">commit</span>(<span class="string">&#x27;JIAODD&#x27;</span>,value)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用于操作数据 --state--</span></span><br><span class="line"><span class="keyword">const</span> mutations = &#123;</span><br><span class="line">    <span class="title function_">JIA</span>(<span class="params">state,value</span>)&#123;</span><br><span class="line">        <span class="comment">// console.log(state)</span></span><br><span class="line">        state.<span class="property">sum</span> += value</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">JIAN</span>(<span class="params">state,value</span>)&#123;</span><br><span class="line">        state.<span class="property">sum</span> -= value</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">JIAODD</span>(<span class="params">state,value</span>)&#123;</span><br><span class="line">        state.<span class="property">sum</span> += value</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//用于存储数据</span></span><br><span class="line"><span class="keyword">const</span> state = &#123;</span><br><span class="line">    <span class="attr">sum</span>: <span class="number">0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//创建store</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">createStore</span>(&#123;</span><br><span class="line">    actions,</span><br><span class="line">    mutations,</span><br><span class="line">    state</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="getters配置项"><a href="#getters配置项" class="headerlink" title="getters配置项"></a>getters配置项</h4><figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//用于将state中的数据进行加工</span></span><br><span class="line"><span class="keyword">const</span> getters = &#123;</span><br><span class="line">    <span class="title function_">bigNum</span>(<span class="params">state</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> state.<span class="property">sum</span> * <span class="number">10</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233547.png" alt="image-20230410184319490"></p>
-<h4 id="mapState和mapGetters"><a href="#mapState和mapGetters" class="headerlink" title="mapState和mapGetters"></a>mapState和mapGetters</h4><p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233642.png" alt="image-20230410190026551"></p>
-<blockquote>
-<p>书写计算属性</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">computed: &#123;</span><br><span class="line">        //程序员亲自书写计算属性</span><br><span class="line">        he()&#123;</span><br><span class="line">            return this.$store.state.sum</span><br><span class="line">        &#125;,</span><br><span class="line">        xuexaio()&#123;</span><br><span class="line">            return this.$store.state.school</span><br><span class="line">        &#125;,</span><br><span class="line">        banji()&#123;</span><br><span class="line">            return  this.$store.state.classId</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>mapState生成计算属性</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233712.png" alt="image-20230410190847682"></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//借助mapState生成计算属性 --数组写法 计算属性和state数据属性名相同</span><br><span class="line">    computed: &#123;</span><br><span class="line">        ...mapState([&#x27;sum&#x27;,&#x27;school&#x27;,&#x27;classId&#x27;])</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p>mapGetters同上</p>
-<h4 id="mapActions和mapMutations"><a href="#mapActions和mapMutations" class="headerlink" title="mapActions和mapMutations"></a>mapActions和mapMutations</h4><blockquote>
-<p>mapMutations</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">methods: &#123;</span><br><span class="line">		//调用mapMutations生成对应的方法，方法中会调用commit去联系mutations</span><br><span class="line">        ...mapMutations(&#123;increment:&#x27;JIA&#x27;,decrement:&#x27;JIAN&#x27;&#125;)</span><br><span class="line">        ,</span><br><span class="line">        incrementOdd() &#123;</span><br><span class="line">            this.$store.dispatch(&#x27;jiaOdd&#x27;, this.n)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>有参数必须传值</strong></p>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230415233732.png" alt="image-20230410192222043"></p>
-<p>对象写法同mapState</p>
-<h4 id="Vuex模块化"><a href="#Vuex模块化" class="headerlink" title="Vuex模块化"></a>Vuex模块化</h4><ol>
-<li><p>目的：让代码更好维护，让多种数据分类更加明确。</p>
-</li>
-<li><p>修改<code>store.js</code></p>
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> countAbout = &#123;</span><br><span class="line">  <span class="attr">namespaced</span>:<span class="literal">true</span>,<span class="comment">//开启命名空间</span></span><br><span class="line">  <span class="attr">state</span>:&#123;<span class="attr">x</span>:<span class="number">1</span>&#125;,</span><br><span class="line">  <span class="attr">mutations</span>: &#123; ... &#125;,</span><br><span class="line">  <span class="attr">actions</span>: &#123; ... &#125;,</span><br><span class="line">  <span class="attr">getters</span>: &#123;</span><br><span class="line">    <span class="title function_">bigSum</span>(<span class="params">state</span>)&#123;</span><br><span class="line">       <span class="keyword">return</span> state.<span class="property">sum</span> * <span class="number">10</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> personAbout = &#123;</span><br><span class="line">  <span class="attr">namespaced</span>:<span class="literal">true</span>,<span class="comment">//开启命名空间</span></span><br><span class="line">  <span class="attr">state</span>:&#123; ... &#125;,</span><br><span class="line">  <span class="attr">mutations</span>: &#123; ... &#125;,</span><br><span class="line">  <span class="attr">actions</span>: &#123; ... &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> <span class="title class_">Vuex</span>.<span class="title class_">Store</span>(&#123;</span><br><span class="line">  <span class="attr">modules</span>: &#123;</span><br><span class="line">    countAbout,</span><br><span class="line">    personAbout</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>开启命名空间后，组件中读取state数据：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：自己直接读取</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="property">state</span>.<span class="property">personAbout</span>.<span class="property">list</span></span><br><span class="line"><span class="comment">//方式二：借助mapState读取：</span></span><br><span class="line">...<span class="title function_">mapState</span>(<span class="string">&#x27;countAbout&#x27;</span>,[<span class="string">&#x27;sum&#x27;</span>,<span class="string">&#x27;school&#x27;</span>,<span class="string">&#x27;subject&#x27;</span>]),</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>开启命名空间后，组件中读取getters数据：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：自己直接读取</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="property">getters</span>[<span class="string">&#x27;personAbout/firstPersonName&#x27;</span>]</span><br><span class="line"><span class="comment">//方式二：借助mapGetters读取：</span></span><br><span class="line">...<span class="title function_">mapGetters</span>(<span class="string">&#x27;countAbout&#x27;</span>,[<span class="string">&#x27;bigSum&#x27;</span>])</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>开启命名空间后，组件中调用dispatch</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：自己直接dispatch</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="title function_">dispatch</span>(<span class="string">&#x27;personAbout/addPersonWang&#x27;</span>,person)</span><br><span class="line"><span class="comment">//方式二：借助mapActions：</span></span><br><span class="line">...<span class="title function_">mapActions</span>(<span class="string">&#x27;countAbout&#x27;</span>,&#123;<span class="attr">incrementOdd</span>:<span class="string">&#x27;jiaOdd&#x27;</span>,<span class="attr">incrementWait</span>:<span class="string">&#x27;jiaWait&#x27;</span>&#125;)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>开启命名空间后，组件中调用commit</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//方式一：自己直接commit</span></span><br><span class="line"><span class="variable language_">this</span>.<span class="property">$store</span>.<span class="title function_">commit</span>(<span class="string">&#x27;personAbout/ADD_PERSON&#x27;</span>,person)</span><br><span class="line"><span class="comment">//方式二：借助mapMutations：</span></span><br><span class="line">...<span class="title function_">mapMutations</span>(<span class="string">&#x27;countAbout&#x27;</span>,&#123;<span class="attr">increment</span>:<span class="string">&#x27;JIA&#x27;</span>,<span class="attr">decrement</span>:<span class="string">&#x27;JIAN&#x27;</span>&#125;),</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>Vue</category>
-      </categories>
-      <tags>
-        <tag>Web</tag>
-        <tag>Vue</tag>
-        <tag>Vuex</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux基础</title>
-    <url>/2023/04/16/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E7%AC%94%E8%AE%B0/Linux%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<h2 id="Linux基础"><a href="#Linux基础" class="headerlink" title="Linux基础"></a>Linux基础</h2><h3 id="学习Linux的价值"><a href="#学习Linux的价值" class="headerlink" title="学习Linux的价值"></a>学习Linux的价值</h3><ul>
-<li>Linux是现代化应用程序交付的首选平台，无论是部署在裸机、虚拟化还是容器环境</li>
-<li>公司内部服务(TCE、FaaS、SCM)统一使用Debian Linux系统</li>
-<li>熟悉Linux基础命令，熟练运维前端常用服务(Nginx,Node.js)</li>
-<li>加深对操作系统概念和实现的裸机，夯实基础知识</li>
-</ul>
-<h3 id="计算机硬件"><a href="#计算机硬件" class="headerlink" title="计算机硬件"></a>计算机硬件</h3><h4 id="计算机由五大单元组成"><a href="#计算机由五大单元组成" class="headerlink" title="计算机由五大单元组成"></a>计算机由五大单元组成</h4><ul>
-<li>控制器</li>
-<li>运算器</li>
-<li>存储器单元</li>
-<li>输入单元</li>
-<li>输出单元</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416145548.png" alt="image-20230415222811528"></p>
-<h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><p>管理和控制计算机系统中的硬件和软件资源，用于在用户与系统硬件之间传递信息</p>
-<blockquote>
-<p>操作系统做的事情</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150207.png" alt="image-20230415223222027"></p>
-<blockquote>
-<p>操作系统的启动流程</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150239.png" alt="image-20230415223608404"></p>
-<h3 id="Linux系统概述"><a href="#Linux系统概述" class="headerlink" title="Linux系统概述"></a>Linux系统概述</h3><h4 id="查看Linux版本信息"><a href="#查看Linux版本信息" class="headerlink" title="查看Linux版本信息"></a>查看Linux版本信息</h4><p>内核版本信息</p>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150312.png" alt="image-20230415223943949"></p>
-<p>发行版本信息</p>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150341.png" alt="image-20230415224031953"></p>
-<h4 id="Linux系统应用领域"><a href="#Linux系统应用领域" class="headerlink" title="Linux系统应用领域"></a>Linux系统应用领域</h4><ul>
-<li>IT服务器(操作系统、虚拟化和云计算)</li>
-<li>嵌入式智能设备</li>
-<li>个人办公桌面</li>
-<li>学术研究与软件研发</li>
-</ul>
-<h4 id="Linux组成部分"><a href="#Linux组成部分" class="headerlink" title="Linux组成部分"></a>Linux组成部分</h4><ul>
-<li><p>内核</p>
-</li>
-<li><p>shell</p>
-</li>
-<li><p>文件系统</p>
-<p>操作系统中负责管理持久化数据的子系统，负责把用户的文件存在磁盘硬件中，持久化的保存文件。</p>
-</li>
-<li><p>应用程序</p>
-</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150410.png" alt="image-20230415224500780"></p>
-<h4 id="Linux体系结构"><a href="#Linux体系结构" class="headerlink" title="Linux体系结构"></a>Linux体系结构</h4><p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150437.png" alt="image-20230415224632948"></p>
-<ul>
-<li>内核是硬件与软件之间的中间层</li>
-<li>内核是一个资源管理程序</li>
-<li>内核提供一组面向系统的命令</li>
-</ul>
-<h4 id="文件系统命令"><a href="#文件系统命令" class="headerlink" title="文件系统命令"></a>文件系统命令</h4><blockquote>
-<p>查看文件系统类型</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150503.png" alt="image-20230415230959261"></p>
-<blockquote>
-<p>文件基本操作</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150526.png" alt="image-20230415231037026"></p>
-<h4 id="文件读取流程"><a href="#文件读取流程" class="headerlink" title="文件读取流程"></a>文件读取流程</h4><p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150600.png" alt="image-20230415231130487"></p>
-<h4 id="用户权限"><a href="#用户权限" class="headerlink" title="用户权限"></a>用户权限</h4><ul>
-<li><p>用户账户</p>
-<p>普通用户账户: 在系统中进行普通作业</p>
-<p>超级用户账户: 在系统中对普通用户和整个系统进行管理</p>
-</li>
-<li><p>组账户</p>
-<p>标准组: 可以容纳多个用户</p>
-<p>私有组: 只有用户自己</p>
-</li>
-</ul>
-<blockquote>
-<p>查看用户信息</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150623.png" alt="image-20230415231735712"></p>
-<blockquote>
-<p>文件权限关于用户的三个概念:</p>
-</blockquote>
-<p>所有者：文件的所有者</p>
-<p>所在组：文件的所有者所在的组</p>
-<p>其他人：除文件所有者及所在组外的其他人</p>
-<p>每个用户对于文件都有不同的权限，包括度&#x3D;读(R)、写(W)、执行(X)</p>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150702.png" alt="image-20230415232152821"></p>
-<blockquote>
-<p>用户权限操作</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150737.png" alt="image-20230415232229526"></p>
-<h3 id="Linux软件包管理"><a href="#Linux软件包管理" class="headerlink" title="Linux软件包管理"></a>Linux软件包管理</h3><h4 id="软件包"><a href="#软件包" class="headerlink" title="软件包"></a>软件包</h4><p>通常指的是一个应用程序，它可以是一个GUI应用程序、命令行工具或(其他全检程序需要的)软件库</p>
-<h4 id="软件包管理"><a href="#软件包管理" class="headerlink" title="软件包管理"></a>软件包管理</h4><p>底层工具:主要是用来处理安装和删除软件包文件等任务，DPKG,RPM</p>
-<p>上层工具:主要是用于数据搜索任务和依赖解析任务，APT,YUM,DNF</p>
-<h4 id="软件包管理工具"><a href="#软件包管理工具" class="headerlink" title="软件包管理工具"></a>软件包管理工具</h4><p>RPM(Red Hat Package Manager)，为Red hat 操作系统的包管理系统</p>
-<p>DPKG(Debian package)，为Debian操作系统的包管理系统</p>
-<p><img src="https://raw.githubusercontent.com/anfadagfag/pictures/main/img/20230416150800.png" alt="image-20230416143909320"></p>
-<h4 id="Debian-APT常用命令"><a href="#Debian-APT常用命令" class="headerlink" title="Debian APT常用命令"></a>Debian APT常用命令</h4><ul>
-<li>列出所有有更新的软件清单命令：apt update</li>
-<li>安装指定的软件命令：apt install <package_name></li>
-<li>安装多个软件包：apt install <package_1> <package_2></li>
-<li>更新指定的软件命令：apt update <package_name></li>
-<li>删除软件包命令：apt remove <package_name></li>
-<li>查找软件包命令：apt search <keyword></li>
-<li>列出所有已安装的包：apt list –installed</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
 </search>
